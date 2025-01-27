@@ -120,12 +120,17 @@
         display: block;
       }
     }
+    @media (max-width: 768px) {
+      .navbar__logo {
+        content: url('res/topbar_logo_small.svg');
+      }
+    }
   </style>
 </head>
 <body>
   <header class="main-header no-print">
     <nav class="navbar">
-      <button class="sidebar-toggle" onclick="toggleSidebar()", style="background-color: #222;">☰</button>
+      <button class="sidebar-toggle" onclick="toggleSidebar()" style="background-color: #00000000;">☰</button>
       <a href="#" class="navbar__logo-link">
         <img class="navbar__logo" id="navbar-logo" alt="Stepan logo" src="res/topbar_logo.svg">
       </a>
